@@ -1,0 +1,75 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+  width: 8em;
+  position: absolute;
+  left: 32em;
+  top: 5em;
+  transform: rotate(-10deg);
+}
+
+h1 {
+  position: absolute;
+  font-size: 3em;
+  font-weight: bolder;
+  left: 14em;
+  top: 2.4em;
+}
+
+h2 {
+  position: absolute;
+  left: 14.5em;
+  top: 1em;
+  font-size: 3em;
+  color: red;
+}
+
+span {
+  color: #30A89C;
+}
+
+.all-container {
+  margin-left: 30em;
+  margin-top: 15em;
+  width: 30em;
+  height: 20em;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.first-container {
+  position: absolute;
+  left: 33em;
+  top: 18em;
+  text-align: center;
+  font-weight: 500;
+}
+
+#distance {
+  width: 10em;
+  height: 1.5em;
+}
+
+#btn {
+width: 8em;
+height: 2em;
+color: #808080;
+border: .5px solid #808080;
+border-radius: 10px;
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+margin-left: 1em;
+}
+
+#btn:hover {
+  opacity: 1;
+  background-color: #66BFBF;
+  color:white;
+}
+
+.answer {
+  font-weight: bolder;
+  font-size: 1.1em;
+}

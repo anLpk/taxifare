@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Taxi Fare Istanbul</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="all-container">
+    <div class="header">
+      <img id="logo" onclick="scaleFun()" src="images/taxi.png" alt="taxi-fare-istanbul-logo">
+      <h2>Taxi <span>Fare</span></h2>
+      <h1>Calculation</h1>
+    </div>
+    <div class="first-container">
+      <p>Type the distance between your destinations and <br> get the estimate price for your taxi fare.</p>
+      <input type="radio" name="sehir" id="istanbul" value="Istanbul" checked>İstanbul
+      <input type="radio" name="sehir" id="ankara" value="ankara">Ankara
+      <input type="radio" name="sehir" id="izmir" value="izmir">İzmir <br><br>
+      <input type="number" id="distance" value="distance" placeholder="Ex:23km" min="1" max="200">
+      <button id="btn" onclick="multiplyBy()" value="Calculate">Calculate</button>
+      <p class="answer">Price is : <span id="result"></span></p>
+      <p class="answer">Estimated time is : <span id="time"></span></p>
+    </div>
+  </div>
+  <script src="calculate.js"></script>
+</body>
+</html>
