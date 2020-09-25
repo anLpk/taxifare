@@ -157,4 +157,13 @@ input[type="number"] {
     margin-top: 1em;
     padding: .4em;
   }
+
+  input[type="radio"] {
+    margin-left: .5em;
+    margin-right: .2em;
+  }
+
+  input[type="number"] {
+    height: 2.4em;
+  }
 }
