@@ -26,9 +26,9 @@ function multiplyBy()
   }
 }
 
-const inputItem = document.getElementById("distance");
+
 
 btn.addEventListener('click', (event) => {
   event.target.textContent = 'Thank You!';
-  inputItem.style.display = "none";
+  
 });
