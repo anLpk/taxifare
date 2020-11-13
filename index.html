@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Taxi Fare Istanbul</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width">
@@ -18,6 +19,7 @@
 
     <div class="second-container">
       <p class="asking">Type the distance between your destinations and get the estimated price</p>
+      <div id="map"></div>
 
       <div class="input-container">
         <input type="radio" name="sehir" id="istanbul" value="Istanbul" checked>İstanbul
@@ -35,6 +37,8 @@
       </div>
     </div>
   </div>
+
   <script src="calculate.js"></script>
+  <script src="maps.js"></script>
 </body>
 </html>
