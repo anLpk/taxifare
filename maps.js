@@ -12,7 +12,7 @@ function initMap() {
     "https://chart.googleapis.com/chart?" +
     "chst=d_map_pin_letter&chld=O|FFFF00|000000";
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 55.53, lng: 9.4 },
+    center: { lat: 41.0082, lng: 28.9784 },
     zoom: 10,
   });
   const geocoder = new google.maps.Geocoder();
