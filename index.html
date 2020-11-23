@@ -3,12 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Taxi Fare Istanbul</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&libraries=&v=weekly" defer></script>
+  <meta name="viewport" content="width=device-width">
+
+  <title>Taxi Fare Calculator | Istanbul</title>
+
+  <meta name="description" content="Istanbul Estimated Taxi Prices. Taxi calculator tool shows you 'How much it will cost you trip in Istanbul!'">
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy7vbmC4G1j8BfEFqFKIbnDOyU-yn49_Q&callback=initMap&libraries=&v=weekly" defer></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?APIKEY&libraries=places&callback=initMap"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="style.css">
 
 <body>
   <div class="all-container">
@@ -21,24 +28,37 @@
       <p class="asking">Type the distance between your destinations and get the estimated price</p>
       <div id="map"></div>
 
-      <div class="input-container">
-        <input type="radio" name="sehir" id="istanbul" value="Istanbul" checked>İstanbul
-        <input type="radio" name="sehir" id="ankara" value="ankara">Ankara
-        <input type="radio" name="sehir" id="izmir" value="izmir">İzmir <br><br>
+      <div id="locationField">
+        <input id="autocomplete" placeholder="Where in Istanbul do you want to start?" type="text" /><br><br>
       </div>
 
-      <div class="button">
-        <input type="number" id="distance" value="distance" placeholder="Ex:23km" min="1" max="200">
+      <!-- <div class="button">
+        <input type="text" class="distance" placeholder="Where in Istanbul do you want to start?"><br><br>
+        <input type="text"  class="distance" placeholder="Where do you want to go?"><br><br>
         <button id="btn" onclick="multiplyBy()" value="Calculate">Calculate</button>
-      </div>
+      </div> -->
       <div class="answer-container">
         <p class="answer">Price is : <span id="result"></span></p>
         <p class="answer">Estimated time is : <span id="time"></span></p>
       </div>
     </div>
   </div>
+<!-- 
+    <div id="controls">
+      <select id="country">
+        <option value="tr">Turkey</option>
+      </select>
+    </div> -->
 
+  <div id="map"></div>
+
+  <!-- <div id="listing">
+    <table id="resultsTable">
+      <tbody id="results"></tbody>
+    </table>
+  </div> -->
   <script src="calculate.js"></script>
   <script src="maps.js"></script>
+  <script src="auto.js"></script>
 </body>
 </html>
