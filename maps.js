@@ -82,10 +82,3 @@ function initMap() {
     }
   );
 }
-
-function deleteMarkers(markersArray) {
-  for (let i = 0; i < markersArray.length; i++) {
-    markersArray[i].setMap(null);
-  }
-  markersArray = [];
-}
